@@ -1,0 +1,19 @@
+<head>
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+<h1>Temperature Converter</h1>
+{{>temperatureBoxes}}
+</body>
+
+<template name="temperatureBoxes">
+    <form>
+        <div>
+            <label>Degree C</label><input title="c" type="text" id="c" value="{{degC}}"/>
+        </div>
+        <div>
+            <label>Degree F</label><input title="f" type="text" id="f" value="{{degF}}"/>
+        </div>
+    </form>
+</template>
