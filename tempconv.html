@@ -11,12 +11,14 @@
 </body>
 
 <template name="temperatureBoxes">
-    <form>
-        <div>
-            <input title="c" class="tempbox" type="text" id="c" value="{{degC}}"/><label>&deg; C</label>
+    <form class="form-horizontal">
+        <div class="form-group-lg">
+            <label>&deg; C</label>
+            <input title="c" class="form-control tempbox " type="text" id="c" value="{{degC}}"/>
         </div>
-        <div>
-            <input title="f" class="tempbox" type="text" id="f" value="{{degF}}"/><label>&deg; F</label>
+        <div class="form-group-lg">
+            <label>&deg; F</label>
+            <input title="f" class="form-control tempbox" type="text" id="f" value="{{degF}}"/>
         </div>
     </form>
 </template>
