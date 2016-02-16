@@ -3,17 +3,20 @@
 </head>
 
 <body>
+<div class="container">
 <h1>Temperature Converter</h1>
+<h3><small>Type in number to be converted in one of the boxes and hit Enter</small></h3>
 {{>temperatureBoxes}}
+    </div>
 </body>
 
 <template name="temperatureBoxes">
     <form>
         <div>
-            <input title="c" type="text" id="c" value="{{degC}}"/><label>&deg; C</label>
+            <input title="c" class="tempbox" type="text" id="c" value="{{degC}}"/><label>&deg; C</label>
         </div>
         <div>
-            <input title="f" type="text" id="f" value="{{degF}}"/><label>&deg; F</label>
+            <input title="f" class="tempbox" type="text" id="f" value="{{degF}}"/><label>&deg; F</label>
         </div>
     </form>
 </template>
