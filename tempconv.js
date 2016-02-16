@@ -17,7 +17,7 @@ if (Meteor.isClient) {
         var degC = e.target.value;
         var degF = Math.round(degC*9/5 + 32);
         Session.set('degF',degF);
-        Session.set('degC',degC);
+
       }
     },
     'keyup #f': function(e){
@@ -25,7 +25,7 @@ if (Meteor.isClient) {
         var degF = e.target.value;
         var degC = Math.round((degF-32)* 5/9);
         Session.set('degC',degC);
-        Session.set('degF',degF);
+
       }
     }
   });
