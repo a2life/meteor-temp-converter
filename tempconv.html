@@ -7,6 +7,7 @@
 <h1>Temperature Converter</h1>
 <h3><small>Type in number to be converted in one of the boxes and hit Enter</small></h3>
 {{>temperatureBoxes}}
+    <footer class="text-right">A2life&copy; 2016</footer>
     </div>
 </body>
 
@@ -14,11 +15,11 @@
     <form class="form-horizontal">
         <div class="form-group-lg">
             <label>&deg; C</label>
-            <input title="c" class="form-control tempbox " type="text" id="c" value="{{degC}}"/>
+            <input title="Degree C" class="form-control tempbox " type="text" id="c" value="{{degC}}"/>
         </div>
         <div class="form-group-lg">
             <label>&deg; F</label>
-            <input title="f" class="form-control tempbox" type="text" id="f" value="{{degF}}"/>
+            <input title="Degree F" class="form-control tempbox" type="text" id="f" value="{{degF}}"/>
         </div>
     </form>
 </template>
